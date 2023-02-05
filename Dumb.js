@@ -75,3 +75,23 @@ else if(`${age}` >= 18){
 else{
   console.log("You run at 12:30")
 }
+/*
+
+
+*/
+rock paper sci
+var x = "RoCk";
+const getUserChoice = userInput => {
+  let y = Math.floor(Math.random()*3);
+  console.log(y);
+  if(((userInput=='rock') && y==1) || ((userInput=='paper') && y==2) || ((userInput=='sci') && y==0) ){
+    console.log("lose");
+  }
+  else if(((userInput=='rock') && y==0) || ((userInput=='paper') && y==1) || ((userInput=='sci') && y==2) ){
+    console.log("tie");
+  }
+  else{
+    console.log("win");
+  }
+}
+getUserChoice(x.toLowerCase());
