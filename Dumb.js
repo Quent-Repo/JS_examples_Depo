@@ -54,8 +54,7 @@ if(`${age}` >= 18){
 }
 else{
   console.log("You run at 12:30")
-}
-//Race
+}//Race
 let raceNumber = Math.floor(Math.random() * 1000);
 let reg = "late"
 let age = Math.floor(Math.random()*40)
@@ -79,7 +78,7 @@ else{
 
 
 */
-rock paper sci
+//rock paper sci
 var x = "RoCk";
 const getUserChoice = userInput => {
   let y = Math.floor(Math.random()*3);
@@ -95,3 +94,83 @@ const getUserChoice = userInput => {
   }
 }
 getUserChoice(x.toLowerCase());
+/*
+
+
+*/
+//Training day
+
+const getRandEvent = () => {
+  let random = Math.floor(Math.random() * 3);
+  if (random === 0) {
+    return "Marathon";
+  } else if (random === 1) {
+    return "Triathlon";
+  } else if (random === 2) {
+    return "Pentathlon";
+  }
+};
+
+// The scope of `days` is too tight
+const getTrainingDays = (event) => {
+  if (event === "Marathon") {
+    return 50;
+  } else if (event === "Triathlon") {
+    return 100;
+  } else if (event === "Pentathlon") {
+    return 200;
+  } else {
+    return 0;
+  }
+};
+
+// The scope of `name` is too tight
+const logEvent = () => {
+  console.log(`${name}'s event is: ${event}`);
+  console.log(`${name}'s time to train is: ${days} days`);
+};
+
+
+let event = getRandEvent();
+let days = getTrainingDays(event);
+let name = 'Nala';
+logEvent();
+
+
+
+event = getRandEvent();
+days = getTrainingDays(event);
+name = 'Warren';
+logEvent();
+
+event = getRandEvent();
+days = getTrainingDays(event);
+name = 'Dave';
+logEvent();
+/*
+
+
+
+*/
+//Whale talk
+let speak = "turpentine and turtles";
+let hole = "";
+for (let i = 0; i < speak.length; i++) {
+  if (
+    speak[i] == "a" ||
+    speak[i] == "i" ||
+    speak[i] == "o" ||
+    speak[i] == "e" ||
+    speak[i] == "u"
+  ) {
+    if (speak[i] == "e" || speak[i] == "u") {
+      hole += speak[i] + speak[i];
+    } else {
+      hole += speak[i];
+    }
+  }
+}
+console.log(hole);
+
+
+
