@@ -174,3 +174,12 @@ console.log(hole);
 
 
 
+///truff
+
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// Iterate over fruits belo
+
+fruits.forEach(function(itemss){
+  console.log('I want to eat a ' + itemss);
+});
